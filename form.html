@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HEDER</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/volodarsk1.png" type="png/png">
+
+
+</head>
+<body>
+
+
+
+                <div class="sq">
+                    <button onclick="swa()" type="button">Обратная связь</button>
+                    </div>
+
+
+
+                        <div id="modal">
+                          <div id="form1">
+                            <button class="close" title="Закрыть окно" onclick="swa2()" >&#128937;</button><br>
+
+                        <form class="" method="post" action="ms.php">  
+
+                            <h2>Добрый день. Нам важно Ваше мнение. Если у Вас есть вопросы, претензии, предложения, пожалуйста, изложите их на этой странице. Мы свяжемся с Вами по указанным контактным данным.</h2>
+                            
+                              <input type=" text" placeholder=" ФИО" name="name">
+                              <br>
+                              <input title="text" placeholder=" Email" name="email">
+                              <br>
+                              <textarea placeholder="Сообщение..." name="txt"></textarea>
+                              <button type="submit" class="bs">Отправление</button> 
+
+                            </form>
+
+
+
+                          </div>
+                        </div>
+
+                        <script>
+                            var b = document.getElementById('modal');
+                                function swa(){
+                                 b.style.visibility = 'visible';
+                                    b.style.opacity = '1';
+                                 b.style.transition = 'all 0.7s ease-out 0s';
+                        }
+                             function swa2(){
+                                b.style.visibility = 'hidden';
+                                b.style.opacity = '0';
+                        }
+                        </script>
+
+</body>
+</html>
